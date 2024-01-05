@@ -11,12 +11,6 @@ const columns = [
     sorter: (a, b) => { return a.title.localeCompare(b.title)}
   },
   {
-    title: "Category",
-    dataIndex: "category",
-    key: "category",
-    sorter: (a, b) => { return a.category.localeCompare(b.category)}
-  },
-  {
     title: 'Price',
     dataIndex: 'price',
     key: 'price',
@@ -26,6 +20,13 @@ const columns = [
       },
   
   },
+  {
+    title: "Category",
+    dataIndex: "category",
+    key: "category",
+    sorter: (a, b) => { return a.category.localeCompare(b.category)}
+  },
+
 ];
 const onChange = (pagination, sorter) => {
   console.log(pagination, sorter);
